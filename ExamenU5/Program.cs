@@ -10,6 +10,10 @@ namespace ExamenU5
     {
         static void Main(string[] args)
         {
+
+            Ejercicios Examen = new Ejercicios();
+            Examen.Menu();
+           
         }
     }
 }
