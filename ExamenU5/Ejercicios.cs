@@ -226,14 +226,14 @@ namespace ExamenU5
                 case 3:
                     Shellsort(arreglo);
 
-                    Console.WriteLine("\n\nNumeros ordenados de mayor a menor ");//imprime arreglo ordenado de mayor a menor
-                    for (int j = arreglo.Length-1; j >=0; j--)
-                    {
-                        Console.Write("{0}, ", arreglo[j]);
-                    }
+                    /* Console.WriteLine("\n\nNumeros ordenados de mayor a menor ");//imprime arreglo ordenado de mayor a menor
+                     for (int j = arreglo.Length-1; j >=0; j--)
+                     {
+                         Console.Write("{0}, ", arreglo[j]);
+                     }
 
-                    goto FIN;// termina la funcion aqui porque ya se imprimio el orden
-                    
+                     goto FIN;// termina la funcion aqui porque ya se imprimio el orden*/
+                    break;
             
                 case 4:
                     quicksort(arreglo, 0, arreglo.Length - 1);//manda llamar quicksort como metodo de ordenamiento
@@ -395,7 +395,7 @@ namespace ExamenU5
                     l = 1;
                     while (l <= (arreglo.Length - salto))
                     {
-                        if (arreglo[l - 1] > arreglo[(l - 1) + salto])//se compara posiciones conforme al salto y se realiza el cambio de posicion
+                        if (arreglo[l - 1] < arreglo[(l - 1) + salto])//se compara posiciones conforme al salto y se realiza el cambio de posicion
                         {
                             auxiliar = arreglo[(l - 1) + salto];
                             arreglo[(l - 1) + salto] = arreglo[l - 1];
